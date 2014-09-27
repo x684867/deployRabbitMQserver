@@ -14,3 +14,4 @@ apt-key add rabbitmq-signing-key-public.asc
 apt-get update --fix-missing -y
 apt-get install rabbitmq-server -y
 echo "ulimit -n 1024" >> /etc/default/rabbitmq-server
+/etc/init.d/rabbitmq-server restart
